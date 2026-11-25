@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartCV AI — Gestion et analyse intelligente de CV</title>
+  <meta name="description" content="Gérez votre profil professionnel, analysez votre CV avec l'intelligence artificielle et adaptez-le aux exigences des offres d'emploi." />
+  <link rel="icon" type="image/png" href="assets/logo-nav.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ SECTION 1 — BARRE DE NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#accueil" class="brand" aria-label="SmartCV AI — Accueil">
+        <img src="assets/logo-nav.png" alt="Logo SmartCV AI" class="brand-logo" />
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
+        <a href="#accueil" class="nav-link nav-link-close"><i data-lucide="house"></i>Accueil</a>
+        <a href="#fonctionnalites" class="nav-link nav-link-close"><i data-lucide="layout-grid"></i>Fonctionnalités</a>
+        <a href="#comment-ca-marche" class="nav-link nav-link-close"><i data-lucide="route"></i>Comment ça marche</a>
+        <a href="#chatbot" class="nav-link nav-link-close"><i data-lucide="bot"></i>Assistant IA</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn-ghost" data-auth="connexion">
+          <i data-lucide="log-in"></i>Connexion
+        </button>
+        <button type="button" class="btn btn-primary" data-auth="inscription">
+          <i data-lucide="user-plus"></i>Créer un compte
+        </button>
+        <button type="button" class="btn btn-icon menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="nav-links">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ SECTION 2 — HERO ============ -->
+    <section class="hero" id="accueil">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="hero-badge"><i data-lucide="sparkles"></i>Analyse de CV par intelligence artificielle</span>
+          <h1 class="hero-title">Votre CV mérite une meilleure présentation.</h1>
+          <p class="hero-subtitle">
+            Gérez votre profil professionnel, analysez votre CV avec l'intelligence artificielle
+            et adaptez-le aux exigences des offres d'emploi.
+          </p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary btn-lg" data-auth="inscription">
+              <i data-lucide="user-plus"></i>Créer mon compte
+            </button>
+            <a href="#fonctionnalites" class="btn btn-outline btn-lg">
+              <i data-lucide="arrow-down"></i>Découvrir les fonctionnalités
+            </a>
+          </div>
+        </div>
+
+        <!-- Illustration : interface d'analyse de CV (fonctionnalités réelles du projet) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-titlebar">
+              <span class="mock-dot"></span>
+              <span class="mock-dot"></span>
+              <span class="mock-dot"></span>
+              <span class="mock-title">SmartCV AI — Analyse du CV</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-file">
+                <i data-lucide="upload"></i>
+                <div>
+                  <strong>CV.pdf</strong>
+                  <span>Analyse intelligente du contenu</span>
+                </div>
+              </div>
+              <div class="mock-block">
+                <div class="mock-label"><i data-lucide="brain"></i>Analyse du CV</div>
+                <div class="mock-bar"><span></span></div>
+              </div>
+              <div class="mock-columns">
+                <div class="mock-card">
+                  <div class="mock-label"><i data-lucide="shield-check"></i>Points forts</div>
+                  <ul>
+                    <li>Expériences détaillées</li>
+                    <li>Compétences techniques</li>
+                  </ul>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-label"><i data-lucide="info"></i>À vérifier</div>
+                  <ul>
+                    <li>Informations manquantes</li>
+                    <li>Recommandations</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mock-chips">
+                <span class="chip">Compétences identifiées</span>
+                <span class="chip">Recommandations</span>
+                <span class="chip">Adaptation à une offre</span>
+              </div>
+            </div>
+          </div>
+          <p class="mock-caption">Aperçu de l'interface — exemple de démonstration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 3 — PRÉSENTATION DES FONCTIONNALITÉS ============ -->
+    <section class="features" id="fonctionnalites">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker"><i data-lucide="layout-grid"></i>Fonctionnalités</span>
+          <h2 class="section-title">Trois modules, un objectif : votre CV.</h2>
+          <p class="section-subtitle">
+            L'application s'appuie sur trois modules complémentaires, de la gestion de votre profil
+            jusqu'à l'adaptation de votre CV à une offre d'emploi.
+          </p>
+        </div>
+
+        <!-- MODULE 1 — GESTION DU PROFIL UTILISATEUR -->
+        <article class="feature-block reveal" id="module-1">
+          <div class="feature-media">
+            <div class="mock-window compact">
+              <div class="mock-body">
+                <div class="mock-profile-row">
+                  <span class="mock-avatar"><i data-lucide="user"></i></span>
+                  <div class="mock-profile-text">
+                    <strong>Mon profil</strong>
+                    <span>Informations personnelles et professionnelles</span>
+                  </div>
+                </div>
+                <div class="mock-line wide"></div>
+                <div class="mock-line"></div>
+                <div class="mock-line"></div>
+                <div class="mock-chips">
+                  <span class="chip"><i data-lucide="pencil"></i>Modifier mon profil</span>
+                  <span class="chip"><i data-lucide="info"></i>Saisie des informations du CV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-text">
+            <span class="feature-number"><i data-lucide="user"></i>Module 1</span>
+            <h3 class="feature-title">Gestion du profil utilisateur</h3>
+            <p class="feature-desc">
+              Ce module permet à chaque utilisateur de créer et de gérer son espace personnel.
+            </p>
+            <ul class="feature-list">
+              <li><i data-lucide="user-plus"></i>Création d'un compte utilisateur</li>
+              <li><i data-lucide="log-in"></i>Authentification</li>
+              <li><i data-lucide="user"></i>Gestion du profil personnel</li>
+              <li><i data-lucide="file-plus"></i>Saisie des informations du CV</li>
+              <li><i data-lucide="eye"></i>Consultation du profil</li>
+              <li><i data-lucide="pencil"></i>Modification du profil</li>
+            </ul>
+            <p class="feature-how">
+              L'utilisateur crée son compte et accède à son espace personnel après authentification.
+              Il renseigne ses informations personnelles et professionnelles nécessaires à la
+              constitution de son CV, puis peut les consulter et les modifier à tout moment.
+            </p>
+          </div>
+        </article>
+
+        <!-- MODULE 2 — ANALYSE INTELLIGENTE DU CV -->
+        <article class="feature-block feature-reverse reveal" id="module-2">
+          <div class="feature-media">
+            <div class="mock-window compact">
+              <div class="mock-body">
+                <div class="mock-file">
+                  <i data-lucide="upload"></i>
+                  <div>
+                    <strong>Soumettre mon CV</strong>
+                    <span>Analyse du contenu du document</span>
+                  </div>
+                </div>
+                <div class="mock-columns two">
+                  <div class="mock-card">
+                    <div class="mock-label"><i data-lucide="shield-check"></i>Points forts</div>
+                    <ul><li>Identification des compétences</li></ul>
+                  </div>
+                  <div class="mock-card">
+                    <div class="mock-label"><i data-lucide="alert-circle"></i>Faiblesses</div>
+                    <ul><li>Informations manquantes</li></ul>
+                  </div>
+                </div>
+                <div class="mock-block">
+                  <div class="mock-label"><i data-lucide="brain"></i>Recommandations générées</div>
+                  <div class="mock-bar"><span></span></div>
+                  <div class="mock-bar short"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-text">
+            <span class="feature-number"><i data-lucide="brain"></i>Module 2</span>
+            <h3 class="feature-title">Analyse intelligente du CV</h3>
+            <p class="feature-desc">
+              Ce module permet à l'utilisateur de soumettre son CV afin qu'il soit analysé par un
+              système d'intelligence artificielle.
+            </p>
+            <ul class="feature-list">
+              <li><i data-lucide="upload"></i>Importation ou soumission du CV</li>
+              <li><i data-lucide="scan-search"></i>Analyse du contenu du CV</li>
+              <li><i data-lucide="wrench"></i>Identification des compétences présentes</li>
+              <li><i data-lucide="shield-check"></i>Identification des points forts</li>
+              <li><i data-lucide="alert-circle"></i>Identification des faiblesses</li>
+              <li><i data-lucide="search-x"></i>Détection des informations manquantes</li>
+              <li><i data-lucide="lightbulb"></i>Génération de recommandations pour améliorer le CV</li>
+            </ul>
+            <p class="feature-how">
+              L'utilisateur fournit son CV. Le système analyse les informations contenues dans le
+              document (compétences, points forts, faiblesses, informations manquantes) et présente
+              les résultats dans une interface claire, accompagnés de recommandations basées sur le
+              contenu réellement analysé.
+            </p>
+          </div>
+        </article>
+
+        <!-- MODULE 3 — ADAPTATION DU CV À UNE OFFRE D'EMPLOI -->
+        <article class="feature-block reveal" id="module-3">
+          <div class="feature-media">
+            <div class="mock-window compact">
+              <div class="mock-body">
+                <div class="mock-offer">
+                  <i data-lucide="clipboard-list"></i>
+                  <div>
+                    <strong>Offre d'emploi</strong>
+                    <span>Collez le contenu de l'annonce</span>
+                  </div>
+                </div>
+                <div class="mock-block">
+                  <div class="mock-label"><i data-lucide="git-compare"></i>Comparaison profil ↔ offre</div>
+                  <div class="mock-bar"><span></span></div>
+                  <div class="mock-bar short"><span></span></div>
+                </div>
+                <div class="mock-chips">
+                  <span class="chip">Exigences analysées</span>
+                  <span class="chip">Compétences manquantes</span>
+                  <span class="chip"><i data-lucide="file-pen"></i>Version adaptée du CV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-text">
+            <span class="feature-number"><i data-lucide="file-pen"></i>Module 3</span>
+            <h3 class="feature-title">Adaptation du CV à une offre d'emploi</h3>
+            <p class="feature-desc">
+              Ce module permet à l'utilisateur d'adapter son CV en fonction d'une offre d'emploi précise.
+            </p>
+            <ul class="feature-list">
+              <li><i data-lucide="clipboard-list"></i>Saisie ou insertion du contenu d'une offre d'emploi</li>
+              <li><i data-lucide="scan-search"></i>Analyse des exigences de l'offre</li>
+              <li><i data-lucide="git-compare"></i>Comparaison entre vos compétences et les exigences du poste</li>
+              <li><i data-lucide="search-x"></i>Identification des compétences manquantes ou non démontrées</li>
+              <li><i data-lucide="lightbulb"></i>Proposition d'améliorations du CV</li>
+              <li><i data-lucide="file-pen"></i>Génération d'une version adaptée du CV à l'offre d'emploi</li>
+            </ul>
+            <p class="feature-how">
+              L'utilisateur insère une offre d'emploi dans l'application. Le système analyse les
+              compétences, qualifications et exigences mentionnées, les compare au profil et au CV de
+              l'utilisateur, puis propose des améliorations et génère une version adaptée du CV.
+              Le système reformule et valorise uniquement les informations réelles du candidat : il
+              n'invente jamais de diplômes, d'expériences ou de compétences.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 4 — CHATBOT IA ============ -->
+    <section class="chatbot-section" id="chatbot">
+      <div class="container chatbot-inner">
+        <span class="section-kicker light"><i data-lucide="bot"></i>Chatbot IA</span>
+        <h2 class="section-title">Votre assistant intelligent pour vos CV</h2>
+        <p class="section-subtitle light">
+          Un assistant intégré à l'application, accessible à tout moment, dédié à deux missions :
+        </p>
+        <div class="chatbot-missions">
+          <div class="chatbot-mission reveal">
+            <i data-lucide="circle-help"></i>
+            <div>
+              <strong>Questions sur l'application</strong>
+              <span>Réponses sur le fonctionnement et l'utilisation de l'application et de ses modules.</span>
+            </div>
+          </div>
+          <div class="chatbot-mission reveal">
+            <i data-lucide="file-pen"></i>
+            <div>
+              <strong>Conseils pour votre CV</strong>
+              <span>Conseils sur la rédaction, la présentation et l'amélioration d'un CV.</span>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg chatbot-open-btn" id="chatbot-open-btn">
+          <i data-lucide="message-circle"></i>Ouvrir le chatbot
+        </button>
+        <p class="chatbot-note">
+          <i data-lucide="info"></i>
+          L'assistant répond à partir d'une base de connaissances dédiée à ces deux missions :
+          ses réponses portent uniquement sur le fonctionnement de l'application et les conseils
+          de rédaction, de présentation et d'amélioration de CV.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 5 — PRÉSENTATION DU FONCTIONNEMENT ============ -->
+    <section class="how" id="comment-ca-marche">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker"><i data-lucide="route"></i>Comment ça marche</span>
+          <h2 class="section-title">Votre parcours, étape par étape</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-icon"><i data-lucide="user-plus"></i></span>
+            <span class="step-num">Étape 1</span>
+            <h3 class="step-title">Créer et authentifier votre compte</h3>
+            <p class="step-desc">Créez votre compte utilisateur puis connectez-vous à votre espace personnel.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-icon"><i data-lucide="file-plus"></i></span>
+            <span class="step-num">Étape 2</span>
+            <h3 class="step-title">Renseigner votre profil</h3>
+            <p class="step-desc">Saisissez vos informations personnelles et professionnelles dans votre profil.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-icon"><i data-lucide="brain"></i></span>
+            <span class="step-num">Étape 3</span>
+            <h3 class="step-title">Analyser votre CV</h3>
+            <p class="step-desc">Soumettez votre CV pour une analyse intelligente : compétences, points forts, faiblesses et recommandations.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-icon"><i data-lucide="file-pen"></i></span>
+            <span class="step-num">Étape 4</span>
+            <h3 class="step-title">Adapter votre CV à une offre</h3>
+            <p class="step-desc">Insérez une offre d'emploi et générez une version adaptée de votre CV à cette offre.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 6 — SECTION FINALE ============ -->
+    <section class="final-cta" id="creer-compte">
+      <div class="container final-inner">
+        <h2 class="final-title">Commencez à améliorer votre CV.</h2>
+        <p class="final-text">
+          Créez votre profil, analysez votre CV et adaptez-le aux offres d'emploi grâce à
+          l'intelligence artificielle.
+        </p>
+        <button type="button" class="btn btn-lg btn-accent" data-auth="inscription">
+          <i data-lucide="user-plus"></i>Créer mon compte
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ SECTION 7 — FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-nav.png" alt="Logo SmartCV AI" class="footer-logo" />
+        <p class="footer-desc">
+          Application intelligente de gestion et d'analyse de CV : profil professionnel, analyse
+          par IA et adaptation aux offres d'emploi.
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Liens de pied de page">
+        <a href="#accueil" class="footer-link"><i data-lucide="house"></i>Accueil</a>
+        <a href="#fonctionnalites" class="footer-link"><i data-lucide="layout-grid"></i>Fonctionnalités</a>
+        <a href="#accueil" class="footer-link" data-auth="connexion"><i data-lucide="log-in"></i>Connexion</a>
+        <a href="#accueil" class="footer-link" data-auth="inscription"><i data-lucide="user-plus"></i>Créer un compte</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>SmartCV AI — Gestion et analyse intelligente de CV.</p>
+    </div>
+  </footer>
+
+  <!-- ============ CHATBOT FLOTTANT ============ -->
+  <div class="chatbot-panel" id="chatbot-panel" role="dialog" aria-modal="false" aria-label="Assistant SmartCV AI" hidden>
+    <div class="chatbot-header">
+      <span class="chatbot-avatar"><i data-lucide="bot"></i></span>
+      <div class="chatbot-header-text">
+        <strong>Assistant SmartCV AI</strong>
+        <span>Application &amp; conseils CV</span>
+      </div>
+      <button type="button" class="btn btn-icon chatbot-close" id="chatbot-close" aria-label="Fermer le chatbot">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages" aria-live="polite"></div>
+    <form class="chatbot-input" id="chatbot-form">
+      <input type="text" id="chatbot-text" name="chatbot-text" placeholder="Posez votre question…" autocomplete="off" aria-label="Zone de saisie des messages" required />
+      <button type="submit" class="btn btn-icon btn-primary chatbot-send" aria-label="Envoyer un message">
+        <i data-lucide="send"></i>
+      </button>
+    </form>
+  </div>
+
+  <button type="button" class="chatbot-fab" id="chatbot-fab" aria-label="Ouvrir le chatbot" aria-expanded="false" aria-controls="chatbot-panel">
+    <i data-lucide="bot"></i>
+  </button>
+
+  <!-- ============ MODALE AUTHENTIFICATION ============ -->
+  <div class="modal-overlay" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title" hidden>
+    <div class="modal">
+      <button type="button" class="btn btn-icon modal-close" id="auth-modal-close" aria-label="Fermer la fenêtre">
+        <i data-lucide="x"></i>
+      </button>
+      <span class="modal-icon" id="auth-modal-icon"><i data-lucide="log-in"></i></span>
+      <h3 id="auth-modal-title" class="modal-title">Connexion</h3>
+      <p class="modal-text" id="auth-modal-text">
+        La connexion se fait directement dans l'application SmartCV AI.
+      </p>
+      <button type="button" class="btn btn-primary" id="auth-modal-continue">
+        <i data-lucide="log-in"></i>Continuer vers l'application
+      </button>
+      <a href="#fonctionnalites" class="modal-link nav-link-close" id="auth-modal-cancel">
+        <i data-lucide="info"></i>Découvrir les fonctionnalités d'abord
+      </a>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
